@@ -1,71 +1,65 @@
 {
-    "condition": "minecraft:alternative",
-    "terms": [
-      {
-        "condition": "minecraft:entity_properties",
-        "entity": "this",
-        "predicate": {
-          "equipment": {
-            "mainhand": {
-              "nbt": "{Enchantments:[{id:\"hfk:acceleration\"}]}"
-            }
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "nbt": "{Enchantments:[{id:\"hfk:acceleration\"}]}"
           }
         }
-      },
-      {
-        "condition": "minecraft:inverted",
-        "term": {
-          "condition": "minecraft:alternative",
-          "terms": [
-            {
-              "condition": "minecraft:inverted",
-              "term": {
+      }
+    },
+    {
+      "condition": "minecraft:inverted",
+      "term": {
+        "condition": "minecraft:alternative",
+        "terms": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "equipment": {
+                  "offhand": {
+                    "nbt": "{Enchantments:[{id:\"hfk:acceleration\"}]}"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:alternative",
+            "terms": [
+              {
                 "condition": "minecraft:entity_properties",
                 "entity": "this",
                 "predicate": {
                   "equipment": {
-                    "offhand": {
-                      "nbt": "{Enchantments:[{id:\"hfk:acceleration\"}]}"
+                    "mainhand": {
+                      "item": "bow"
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "equipment": {
+                    "mainhand": {
+                      "item": "crossbow"
                     }
                   }
                 }
               }
-            },
-            {
-              "condition": "minecraft:inverted",
-              "term": {
-                "condition": "minecraft:inverted",
-                "term": {
-                  "condition": "minecraft:alternative",
-                  "terms": [
-                    {
-                      "condition": "minecraft:entity_properties",
-                      "entity": "this",
-                      "predicate": {
-                        "equipment": {
-                          "mainhand": {
-                            "item": "bow"
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "condition": "minecraft:entity_properties",
-                      "entity": "this",
-                      "predicate": {
-                        "equipment": {
-                          "mainhand": {
-                            "item": "crossbow"
-                          }
-                        }
-                      }
-                    }
-                  ]
-                }
-              }
-            }
-          ]
-        }
+            ]
+          }
+        ]
       }
-    ]
-  }
+    }
+  ]
+}
