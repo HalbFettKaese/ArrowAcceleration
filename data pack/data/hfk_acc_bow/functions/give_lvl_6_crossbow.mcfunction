@@ -1,0 +1,1 @@
+give @s crossbow{Enchantments:[{id:"hfk:acceleration",lvl:6}],display:{Lore:['{"translate":"Acceleration VI", "color":"gray","italic":false}']}}

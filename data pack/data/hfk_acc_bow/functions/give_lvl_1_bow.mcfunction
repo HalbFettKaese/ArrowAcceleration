@@ -1,0 +1,1 @@
+give @s bow{Enchantments:[{id:"hfk:acceleration",lvl:1}],display:{Lore:['{"translate":"Acceleration I", "color":"gray","italic":false}']}}
