@@ -8,9 +8,9 @@ scoreboard players operation $z_motion hfk.temp *= $ench_level hfk.temp
 
 scoreboard players set $max hfk.temp 99999
 
-scoreboard players operation $x_motion hfk.temp < $max hfk.temp hfk.temp
-scoreboard players operation $y_motion hfk.temp < $max hfk.temp hfk.temp
-scoreboard players operation $z_motion hfk.temp < $max hfk.temp hfk.temp
+scoreboard players operation $x_motion hfk.temp < $max hfk.temp
+scoreboard players operation $y_motion hfk.temp < $max hfk.temp
+scoreboard players operation $z_motion hfk.temp < $max hfk.temp
 
 execute store result entity @s Motion[0] double 0.0001 run scoreboard players get $x_motion hfk.temp
 execute store result entity @s Motion[1] double 0.0001 run scoreboard players get $y_motion hfk.temp
